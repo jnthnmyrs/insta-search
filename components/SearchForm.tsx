@@ -1,5 +1,7 @@
 "use client";
 
+import { track } from "@vercel/analytics";
+
 const SearchForm = () => {
   function handleSubmit(e: any) {
     e.preventDefault();
@@ -12,6 +14,9 @@ const SearchForm = () => {
       "_blank",
       "noopener noreferrer"
     );
+
+    track("search", { content: `${searchTerm}` });
+
     // Reset the form
     e.target.reset();
   }
