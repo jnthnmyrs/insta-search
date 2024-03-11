@@ -5,8 +5,7 @@ const SearchForm = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const searchTerm = formData.get("search");
-    console.log("Form submitted with:", searchTerm);
-    // Do something with searchTerm here
+
     // Open a new tab with the Instagram search page
     window.open(
       `https://www.instagram.com/explore/search/keyword/?q=${searchTerm}`,
@@ -19,18 +18,20 @@ const SearchForm = () => {
 
   return (
     <form
-      className="bg-gray-50 shadow-xl p-8 flex flex-col gap-4 rounded-xl border border-gray-200"
+      className=" bg-gradient-to-br from-slate-100 to-slate-200 shadow-md shadow-gray-200 p-4 flex flex-col gap-4 rounded-[32px] border border-gray-300"
       onSubmit={handleSubmit}
     >
-      <input
-        type="text"
-        placeholder="type search words right here..."
-        className="border p-4 rounded-full text-center w-full"
-        name="search"
-      />
+      <div className=" ">
+        <input
+          type="text"
+          placeholder="enter a keyword or two..."
+          className="border p-4 rounded-[16px] text-center w-full"
+          name="search"
+        />
+      </div>
       <button
         type="submit"
-        className="border hover:bg-blue-600 text-white p-2 rounded-full bg-blue-500 w-full"
+        className=" hover:to-blue-800 hover:from-blue-600 shadow-sm shadow-blue-700 border-blue-400 hover:border-violet-500 border hover:shadow-violet-600 text-white p-2 rounded-full bg-gradient-to-b from-blue-500 to-blue-600 w-full active:bg-blue-800 active:from-blue-800 active:to-blue-900 active:border-blue-900 active:shadow-blue-900"
       >
         Search Instagram
       </button>
