@@ -22,7 +22,7 @@ export default function Home() {
           {`Currently, Instagram only lets us search by tag. This tool allows you to search by any keyword(s).`}
         </p>
         <p className=" text-gray-400 text-sm mt-4">
-          {`You will need to be logged into Instagram to view the results`}
+          {`P.S. You will need to be logged into Instagram on desktop to view the results`}
         </p>
         <div className="mt-8 text-right text-gray-400 hover:underline text-[11px] hover:text-black">
           <a
