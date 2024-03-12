@@ -29,7 +29,7 @@ const SearchForm = () => {
       <div className=" ">
         <input
           type="text"
-          placeholder="enter a keyword or two..."
+          placeholder="Enter a keyword or two..."
           className="border p-4 rounded-[16px] text-center w-full"
           name="search"
         />
